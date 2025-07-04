@@ -49,7 +49,7 @@ This repository contains a Postman Collection for the **BooksAPI** project. It i
 ---
 
 ## 🌐 Base URL
-https://your-booksapi.example.com
+https://simple-books-api.glitch.me
 
 Replace with your API server’s base URL if required.
 
