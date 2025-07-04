@@ -1,46 +1,69 @@
-# Book API Postman Project
+# 📚 BooksAPI - Postman Collection Project
 
-This is a professional Postman collection for the **Book API** project. It includes all the essential API requests—**POST, GET, PATCH, DELETE**—to perform CRUD operations on book data.  
-The collection is cleanly organized and ready for testing, showcasing, or including in your portfolio.
-
----
-
-## 📦 Project Overview
-
-This Postman collection demonstrates:
-
-| HTTP Method | API Endpoint                           | Description                       |
-|-------------|---------------------------------------|-------------------------------------|
-| POST        | `https://api.example.com/books`        | Create a new book                  |
-| GET         | `https://api.example.com/books`        | Retrieve all books                 |
-| GET         | `https://api.example.com/books/{id}`   | Retrieve a single book by ID       |
-| PATCH       | `https://api.example.com/books/{id}`   | Update a book’s details by ID      |
-| DELETE      | `https://api.example.com/books/{id}`   | Delete a book by ID                |
+This repository contains a Postman Collection for the **BooksAPI** project. It includes multiple API endpoints for authentication, listing books, managing orders, and more. You can import this collection into Postman to test and automate API workflows.
 
 ---
 
-## 🚀 Features
+## 🚀 API Endpoints
 
-✅ Full CRUD API operations  
-✅ Ready-to-use Postman requests (no environment variables required)  
-✅ Organized structure for easy navigation  
-✅ Includes headers, body, and example responses for each API call  
-✅ Perfect for API testing, demos, and portfolio projects  
+| Method | Endpoint              | Description               |
+|--------|-----------------------|---------------------------|
+| POST   | /Create Token         | Generate Auth Token       |
+| GET    | /StatusOfBooks        | Check status of all books |
+| GET    | /ListOfBooks          | Retrieve all books list   |
+| GET    | /SingleOfBooks        | Get details of a single book |
+| POST   | /SubmitOrder          | Submit a new book order   |
+| GET    | /Get All Orders       | Fetch all orders          |
+| GET    | /Get Single Orders    | Fetch a single order      |
+| PATCH  | /Update Orders        | Update an existing order  |
+| DELETE | /Delete Order         | Delete an order           |
 
 ---
 
-## 📖 API Request Details
+## 📂 Project Structure
 
-### 1️⃣ Create a New Book (POST)
+📁 BooksAPI
+├── BooksAPI.postman_collection.json
+└── README.md
 
-- **Endpoint:** `https://api.example.com/books`  
-- **Method:** POST  
-- **Headers:** `Content-Type: application/json`  
-- **Body Example:**
-```json
-{
-  "title": "The Alchemist",
-  "author": "Paulo Coelho",
-  "publishedYear": 1988,
-  "genre": "Fiction"
-}
+---
+
+## 📥 How to Use
+
+1. **Clone or Download** this repository.
+2. Open Postman.
+3. Click on **Import**.
+4. Select the `BooksAPI.postman_collection.json` file from this repo.
+5. Configure environment variables if necessary (e.g., `baseUrl`, `authToken`).
+6. Start testing the API endpoints.
+
+---
+
+## 💡 Features
+
+✅ Token-based Authentication  
+✅ CRUD Operations for Books and Orders  
+✅ Organized API requests for easy testing  
+✅ Ready for automation with Postman Collection Runner  
+
+---
+
+## 🌐 Base URL
+https://your-booksapi.example.com
+
+Replace with your API server’s base URL if required.
+
+---
+
+## ✍ Author
+
+**Mahmudul Hasan Rafi**  
+📧 mahmudulrafi1998@gmail.com  
+
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
